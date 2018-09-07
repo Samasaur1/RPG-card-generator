@@ -1,0 +1,27 @@
+[
+  {
+    "title_size" : "16",
+    "icon" : "broadsword",
+    "count" : 1,
+    "title" : "Greatsword",
+    "tags" : [
+      "Weapon"
+    ],
+    "icon_back" : "crossed-swords",
+    "contents" : [
+      "subtitle | Martial melee weapon (50gp)",
+      "rule",
+      "property | Damage | 2d6 S",
+      "property | Critical | 19-20\/x2",
+      "property | Attack Modifier | Strength",
+      "property | Damage Modifier | Strength",
+      "rule",
+      "fill",
+      "description | Attack | Roll 1d20 + STR. If the result is greater than or equal to the target's AC, you hit.",
+      "description | Critical Hits | If you rolled a <b>natural<\/b> 19-20 on your attack roll, it's a <i>critical threat<\/i>. Roll again. If you hit, the critical hit is confirmed.",
+      "description | Damage | Roll 2d6 + STR. If you made a critical hit, roll 1 more time and add the results together. The target takes this much damage.",
+      "fill"
+    ],
+    "color" : "black"
+  }
+]
