@@ -345,28 +345,31 @@ func addCard(title: String, contents: [String], tags: [String], icon_back: Strin
     jsonObject.append(["count": 1, "title": title, "contents": contents, "tags": tags, "color": "black", "icon_back": icon_back, "icon": icon, "title_size": titleSize])
 }
 
+func save() {
+    print("Output filename?")
+    let fileName = readLine()!
+    do {
+        let jsonString = String(data: try JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted), encoding: .utf8)!
+        try Folder.current.createFileIfNeeded(withName: fileName).write(string: jsonString)
+    } catch let error {
+        print(error.localizedDescription)
+        exit(1)
+    }
+}
 
 while(true) {
-    let input: String! = readLine()
-    guard input != nil else {
-        continue
-    }
+    let input: String = readLine()!
     guard !input.isEmpty else {
         continue
     }
-    guard input != "quit" else {
-        print("Output filename?")
-        let fileName = readLine()!
-        do {
-            let jsonString = String(data: try JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted), encoding: .utf8)!
-            try Folder.current.createFileIfNeeded(withName: fileName).write(string: jsonString)
-        } catch let error {
-            print(error.localizedDescription)
-            exit(1)
+    
+    if input.equalsIgnoreCase("q", "quit", "exit") {
+        print("Do you want to save?")
+        if readLine()!.equalsIgnoreCase("y", "yes") {
+            save()
         }
-        break
-    }
-    if input.equalsIgnoreCase("new", "new card", "create", "create new", "create new card", "add", "add new", "add card", "add new card") {
+        break //breaks `while(true)` loop
+    } else if input.equalsIgnoreCase("c", "create", "create card", "create new", "create new card") {
         print("Type? (spell, weapon, enemy/villain, armor, equipment, potion)")
         let type = readLine()!
         if type.equalsIgnoreCase("spell") {
@@ -387,9 +390,48 @@ while(true) {
             print("Not recognized, not creating")
             continue
         }
-    } else if input.equalsIgnoreCase("list") {
+    } else if input.equalsIgnoreCase("a", "add", "add card", "add new", "add new card") {
+        do {
+            try Folder.home.subfolder(named: ".rpg-generator")
+        } catch {
+            print("Could not read RPGSTDLIB (RPG standard library)")
+            print("Run " + "Initialize RPGSTDLIB".onMagenta + " to initialize RPGSTDLIB")
+            exit(3)
+        }
+        let libFile = try! Folder.home.subfolder(named: ".rpg-generator").file(named: "RPGSTDLIB.json")
+        print("Premade cards:".bold)
+        let libJSON = try! JSONSerialization.jsonObject(with: Data.init(contentsOf: URL(fileURLWithPath: libFile.path))) as! [[String: Any]]
+        for card in libJSON {
+            print(card["title"]! as! String)
+        }
+        print()
+        print("Choose a card or type \"search <TERM>\" to search")
+        print("If the input doesn't match a card, it will search")
+        let cardInput = readLine()!
+        for card in libJSON {
+            if card["title"]! as! String == cardInput {
+                jsonObject.append(card)
+                continue
+            }
+        }
+        var searchTerm = cardInput
+        if cardInput.prefix(7) == "search " {
+            searchTerm = String(cardInput.suffix(from: cardInput.index(cardInput.startIndex, offsetBy: 7)))
+        }
+        for card in libJSON {
+            if String((card["title"]! as! String).prefix(searchTerm.count)).equalsIgnoreCase(searchTerm) {
+                print(card["title"]! as! String)
+            }
+        }
+    } else if input.equalsIgnoreCase("n", "new", "new card") {
+        //TODO: Would you like to add or create?
+    } else if input.equalsIgnoreCase("l", "list", "list card", "list cards") {
         print("JSON so far:")
         print()
         print(String(data: try JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted), encoding: .utf8)!)
+    } else if input == "Initialize RPGSTDLIB" {
+        //TODO: Initialize RPGSTDLIB
+    } else {
+        print("'\(input)' is unrecognized")
     }
 }
