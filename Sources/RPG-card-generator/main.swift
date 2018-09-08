@@ -21,6 +21,13 @@ extension String {
         }
         return self
     }
+    func beginsWith(_ other: String, ignoreCase: Bool) -> Bool {
+        let sub = String(self.prefix(other.count))
+        if ignoreCase {
+            return sub.ignoreCase(other: other)
+        }
+        return sub == other
+    }
 }
 var jsonObject: [[String: Any]] = []
 func createSpell() {
@@ -434,35 +441,61 @@ while(true) {
             continue
         }
     } else if input.equalsIgnoreCase("a", "add", "add card", "add new", "add new card") {
-        do {
-            let _ = try Folder.home.subfolder(named: ".rpg-generator").file(named: "RPGSTDLIB.json")
-        } catch {
+        var cards: [[String: Any]] = []
+        
+        //Add local library cards
+        if let localLib = try? Folder.home.subfolder(named: ".rpg-generator").subfolder(named: "local-library") {
+            for file in localLib.files {
+                do {
+                    let json = try JSONSerialization.jsonObject(with: Data(contentsOf: URL(fileURLWithPath: file.path))) as! [[String: Any]]
+                    cards.append(contentsOf: json)
+                }
+            }
+        } else {
+            print("Could not read local library")
+        }
+        
+        //Add RPGSTDLIB cards
+        if let stdlib = try? Folder.home.subfolder(named: ".rpg-generator").file(named: "RPGSTDLIB.json") {
+            let json = try! JSONSerialization.jsonObject(with: Data(contentsOf: URL(fileURLWithPath: stdlib.path))) as! [[String: Any]]
+            cards.append(contentsOf: json)
+        } else {
             print("Could not read RPGSTDLIB (RPG standard library)")
             print("Run '\(ProcessInfo.processInfo.arguments[0]) RPGSTDLIB' to initialize RPGSTDLIB")
-            exit(3)
         }
-        let libFile = try! Folder.home.subfolder(named: ".rpg-generator").file(named: "RPGSTDLIB.json")
-        print("Premade cards:".bold)
-        let libJSON = try! JSONSerialization.jsonObject(with: Data.init(contentsOf: URL(fileURLWithPath: libFile.path))) as! [[String: Any]]
-        for card in libJSON {
+        
+        print()
+        print("Premade cards:".bold + " (custom cards are listed before RPGSTDLIB cards)")
+        for card in cards {
             print(card["title"]! as! String)
         }
         print()
-        print("Choose a card or type \"search <TERM>\" to search")
+        print("Choose a card or type a term to search for")
         print("If the input doesn't match a card, it will search")
         let cardInput = readLine()!
-        for card in libJSON {
+        for card in cards {
             if card["title"]! as! String == cardInput {
                 jsonObject.append(card)
+                print("Added '\(card["title"]! as! String)'")
                 continue
             }
         }
-        var searchTerm = cardInput
-        if cardInput.prefix(7) == "search " {
-            searchTerm = String(cardInput.suffix(from: cardInput.index(cardInput.startIndex, offsetBy: 7)))
+        for card in cards {
+            if (card["title"]! as! String).equalsIgnoreCase(cardInput) {
+                jsonObject.append(card)
+                print("Added '\(card["title"]! as! String)'")
+                continue
+            }
         }
-        for card in libJSON {
-            if String((card["title"]! as! String).prefix(searchTerm.count)).equalsIgnoreCase(searchTerm) {
+        print()
+        print("No matching card, searching for '\(cardInput)'...".bold)
+        for card in cards {
+            if (card["title"]! as! String).beginsWith(cardInput, ignoreCase: false) {
+                print(card["title"]! as! String)
+            }
+        }
+        for card in cards {
+            if (card["title"]! as! String).beginsWith(cardInput, ignoreCase: true) && !(card["title"]! as! String).beginsWith(cardInput, ignoreCase: false) {
                 print(card["title"]! as! String)
             }
         }
@@ -566,4 +599,5 @@ while(true) {
         print("'\(input)' is unrecognized")
         print("Type 'help' to see available commands")
     }
+    print()
 }
