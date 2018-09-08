@@ -515,18 +515,17 @@ while(true) {
                 if readLine()!.equalsIgnoreCase("n", "no") {
                     continue
                 }
+                print("Filename? (with .json)")
+                let name = readLine()!
                 do {
                     let json = try JSONSerialization.jsonObject(with: d) as! [String: Any]
-                    try Folder.home.createSubfolderIfNeeded(withName: ".rpg-generator").createSubfolderIfNeeded(withName: "local-library").createFile(named: json["title"]! as! String, contents: JSONSerialization.data(withJSONObject: json))
+                    try Folder.home.createSubfolderIfNeeded(withName: ".rpg-generator").createSubfolderIfNeeded(withName: "local-library").createFile(named: name, contents: JSONSerialization.data(withJSONObject: json))
                 } catch let error {
                     print(error.localizedDescription)
                 }
             } else if source.equalsIgnoreCase("current") {
-                var name = ""
-                for card in jsonObject {
-                    name += "\(card["title"]! as! String) + "
-                }
-                name.removeLast(3)
+                print("Filename? (with .json)")
+                let name = readLine()!
                 do {
                     try Folder.home.createSubfolderIfNeeded(withName: ".rpg-generator").createSubfolderIfNeeded(withName: "local-library").createFile(named: name, contents: JSONSerialization.data(withJSONObject: jsonObject))
                 } catch let error {
@@ -542,7 +541,7 @@ while(true) {
                 let folder = try Folder.home.createSubfolderIfNeeded(withName: ".rpg-generator").createSubfolderIfNeeded(withName: "local-library")
                 for file in folder.files.filter({ $0.nameExcludingExtension == fileToDel }) {
                     try file.delete()
-                    print("File \(file.nameExcludingExtension) deleted")
+                    print("File '\(file.nameExcludingExtension)' deleted")
                 }
             } catch let error {
                 print(error.localizedDescription)
@@ -552,7 +551,7 @@ while(true) {
                 let folder = try Folder.home.createSubfolderIfNeeded(withName: ".rpg-generator").createSubfolderIfNeeded(withName: "local-library")
                 for file in folder.files {
                     try file.delete()
-                    print("File \(file.nameExcludingExtension) deleted")
+                    print("File '\(file.nameExcludingExtension)' deleted")
                 }
                 print("Files cleared")
             } catch let error {
