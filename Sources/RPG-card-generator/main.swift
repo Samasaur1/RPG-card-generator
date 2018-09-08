@@ -1,6 +1,7 @@
 import Foundation
 import Files
 import Rainbow
+
 extension String {
     private func ignoreCase(other: String) -> Bool {
         return self.caseInsensitiveCompare(other) == .orderedSame
@@ -356,6 +357,47 @@ func save() {
         exit(1)
     }
 }
+func initializeRPGSTDLIB() {
+    let url = URL(string: "https://raw.githubusercontent.com/Samasaur1/RPG-card-generator/master/Sources/RPG-card-generator/RPGSTDLIB.json")!
+    let sessionConfig = URLSessionConfiguration.default
+    let session = URLSession(configuration: sessionConfig)
+    let request = URLRequest(url: url)
+    let task = session.downloadTask(with: request) { (tempLocalUrl, response, error) in
+        if let tempLocalUrl = tempLocalUrl, error == nil {
+            // Success
+            guard let statusCode = (response as? HTTPURLResponse)?.statusCode else {
+                print("Response error")
+                return
+            }
+            guard (200..<300).contains(statusCode) else {
+                print("Bad status code: \(statusCode)")
+                return
+            }
+            
+            do {
+                let folder = try Folder.home.createSubfolderIfNeeded(withName: ".rpg-generator")
+                try? folder.file(named: "RPGSTDLIB.json").delete() //delete old file if exists
+                let file = try File(path: tempLocalUrl.path)
+                try? file.parent?.file(named: "RPGSTDLIB.json").delete() //delete old file in temp directory if exists
+                try file.rename(to: "RPGSTDLIB.json", keepExtension: false)
+                try file.move(to: folder)
+                
+                print("Successfully initialized RPGSTDLIB")
+            } catch let writeError {
+                print(writeError.localizedDescription)
+            }
+            
+        } else {
+            print("Failure: \(error!.localizedDescription)")
+        }
+    }
+    task.resume()
+}
+
+if CommandLine.arguments[1] == "RPGSTDLIB" {
+    initializeRPGSTDLIB()
+    exit(0)
+}
 
 while(true) {
     let input: String = readLine()!
@@ -392,10 +434,10 @@ while(true) {
         }
     } else if input.equalsIgnoreCase("a", "add", "add card", "add new", "add new card") {
         do {
-            try Folder.home.subfolder(named: ".rpg-generator").file(named: "RPGSTDLIB.json")
+            let _ = try Folder.home.subfolder(named: ".rpg-generator").file(named: "RPGSTDLIB.json")
         } catch {
             print("Could not read RPGSTDLIB (RPG standard library)")
-            print("Run " + "Initialize RPGSTDLIB".onMagenta + " to initialize RPGSTDLIB")
+            print("Run '\(ProcessInfo.processInfo.arguments[0]) RPGSTDLIB' to initialize RPGSTDLIB")
             exit(3)
         }
         let libFile = try! Folder.home.subfolder(named: ".rpg-generator").file(named: "RPGSTDLIB.json")
@@ -436,42 +478,27 @@ while(true) {
         for card in jsonObject {
             print(card["title"]!)
         }
-    } else if input == "Initialize RPGSTDLIB" {
-        let url = URL(string: "https://raw.githubusercontent.com/Samasaur1/RPG-card-generator/master/Sources/RPG-card-generator/RPGSTDLIB.json")!
-        let sessionConfig = URLSessionConfiguration.default
-        let session = URLSession(configuration: sessionConfig)
-        let request = URLRequest(url: url)
-        let task = session.downloadTask(with: request) { (tempLocalUrl, response, error) in
-            if let tempLocalUrl = tempLocalUrl, error == nil {
-                // Success
-                guard let statusCode = (response as? HTTPURLResponse)?.statusCode else {
-                    print("Response error")
-                    return
-                }
-                guard (200..<300).contains(statusCode) else {
-                    print("Bad status code: \(statusCode)")
-                    return
-                }
-                
-                do {
-                    let folder = try Folder.home.createSubfolderIfNeeded(withName: ".rpg-generator")
-                    try? folder.file(named: "RPGSTDLIB.json").delete() //delete old file if exists
-                    let file = try File(path: tempLocalUrl.path)
-                    try? file.parent?.file(named: "RPGSTDLIB.json").delete() //delete old file in temp directory if exists
-                    try file.rename(to: "RPGSTDLIB.json", keepExtension: false)
-                    try file.move(to: folder)
-                    
-                    print("Successfully initialized RPGSTDLIB")
-                } catch let writeError {
-                    print(writeError.localizedDescription)
-                }
-                
-            } else {
-                print("Failure: \(error!.localizedDescription)")
-            }
+    } else if input.equalsIgnoreCase("h", "help") {
+        print("The available commands are:")
+        print("quit, create, add, new, list, help, library")
+    } else if input.equalsIgnoreCase("library") {
+        print("What do you want to do to the library? (list, add, remove, clear, load)")
+        let subtask = readLine()!
+        if subtask.equalsIgnoreCase("list") {
+            
+        } else if subtask.equalsIgnoreCase("add") {
+            
+        } else if subtask.equalsIgnoreCase("remove") {
+            
+        } else if subtask.equalsIgnoreCase("clear") {
+            
+        } else if subtask.equalsIgnoreCase("load") {
+            initializeRPGSTDLIB()
+        } else {
+            print("'\(subtask)' is unrecognized")
         }
-        task.resume()
     } else {
         print("'\(input)' is unrecognized")
+        print("Type 'help' to see available commands")
     }
 }
