@@ -431,6 +431,11 @@ while(true) {
         print("JSON so far:")
         print()
         print(String(data: try JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted), encoding: .utf8)!)
+        print()
+        print("Cards:")
+        for card in jsonObject {
+            print(card["title"]!)
+        }
     } else if input == "Initialize RPGSTDLIB" {
         let url = URL(string: "https://raw.githubusercontent.com/Samasaur1/RPG-card-generator/master/Sources/RPG-card-generator/RPGSTDLIB.json")!
         let sessionConfig = URLSessionConfiguration.default
