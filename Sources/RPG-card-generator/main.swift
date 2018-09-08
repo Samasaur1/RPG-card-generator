@@ -20,7 +20,7 @@ extension String {
         return self
     }
 }
-var jsonObject: [Any] = []
+var jsonObject: [[String: Any]] = []
 func createSpell() {
     print("Creating a spell...")
     print("It's recommended that you make all of these lowercase, except for any components (such as [V, S])")
