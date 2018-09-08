@@ -392,7 +392,7 @@ while(true) {
         }
     } else if input.equalsIgnoreCase("a", "add", "add card", "add new", "add new card") {
         do {
-            try Folder.home.subfolder(named: ".rpg-generator")
+            try Folder.home.subfolder(named: ".rpg-generator").file(named: "RPGSTDLIB.json")
         } catch {
             print("Could not read RPGSTDLIB (RPG standard library)")
             print("Run " + "Initialize RPGSTDLIB".onMagenta + " to initialize RPGSTDLIB")
