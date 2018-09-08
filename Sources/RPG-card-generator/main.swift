@@ -430,7 +430,7 @@ while(true) {
         print()
         print(String(data: try JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted), encoding: .utf8)!)
     } else if input == "Initialize RPGSTDLIB" {
-        let url = URL(string: "http://sam.gauck.com/controlStatus.txt")!
+        let url = URL(string: "https://raw.githubusercontent.com/Samasaur1/RPG-card-generator/master/Sources/RPG-card-generator/RPGSTDLIB.json")!
         let sessionConfig = URLSessionConfiguration.default
         let session = URLSession(configuration: sessionConfig)
         let request = URLRequest(url: url)
