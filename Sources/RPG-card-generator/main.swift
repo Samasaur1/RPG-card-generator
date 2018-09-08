@@ -1,6 +1,7 @@
 import Foundation
 import Files
 import Rainbow
+import AppKit
 
 extension String {
     private func ignoreCase(other: String) -> Bool {
@@ -394,7 +395,7 @@ func initializeRPGSTDLIB() {
     task.resume()
 }
 
-if CommandLine.arguments[1] == "RPGSTDLIB" {
+if CommandLine.argc > 1, CommandLine.arguments[1] == "RPGSTDLIB" {
     initializeRPGSTDLIB()
     exit(0)
 }
@@ -485,13 +486,78 @@ while(true) {
         print("What do you want to do to the library? (list, add, remove, clear, load)")
         let subtask = readLine()!
         if subtask.equalsIgnoreCase("list") {
-            
+            do {
+                let folder = try Folder.home.createSubfolderIfNeeded(withName: ".rpg-generator").createSubfolderIfNeeded(withName: "local-library")
+                for file in folder.files {
+                    print(file.nameExcludingExtension)
+                }
+            } catch let error {
+                print(error.localizedDescription)
+            }
         } else if subtask.equalsIgnoreCase("add") {
-            
+            print("What would you like to add? (file, paste, current)")
+            let source = readLine()!
+            if source.equalsIgnoreCase("file") {
+                print("File path?")
+                let path = readLine()!
+                do {
+                    try File(path: path).copy(to: Folder.home.createSubfolderIfNeeded(withName: ".rpg-generator").createSubfolderIfNeeded(withName: "local-library"))
+                } catch let error {
+                    print(error.localizedDescription)
+                }
+            } else if source.equalsIgnoreCase("paste") {
+                print("Confirm adding:")
+                let d = NSPasteboard.general.data(forType: .string)!
+                let s = String(data: d, encoding: .utf8)!
+                print(s)
+                print()
+                print("Type 'n' or 'no' to cancel")
+                if readLine()!.equalsIgnoreCase("n", "no") {
+                    continue
+                }
+                do {
+                    let json = try JSONSerialization.jsonObject(with: d) as! [String: Any]
+                    try Folder.home.createSubfolderIfNeeded(withName: ".rpg-generator").createSubfolderIfNeeded(withName: "local-library").createFile(named: json["title"]! as! String, contents: JSONSerialization.data(withJSONObject: json))
+                } catch let error {
+                    print(error.localizedDescription)
+                }
+            } else if source.equalsIgnoreCase("current") {
+                var name = ""
+                for card in jsonObject {
+                    name += "\(card["title"]! as! String) + "
+                }
+                name.removeLast(3)
+                do {
+                    try Folder.home.createSubfolderIfNeeded(withName: ".rpg-generator").createSubfolderIfNeeded(withName: "local-library").createFile(named: name, contents: JSONSerialization.data(withJSONObject: jsonObject))
+                } catch let error {
+                    print(error.localizedDescription)
+                }
+            } else {
+                print("Source \(source) not recognized")
+            }
         } else if subtask.equalsIgnoreCase("remove") {
-            
+            print("Which file would you like to remove?")
+            let fileToDel = readLine()!
+            do {
+                let folder = try Folder.home.createSubfolderIfNeeded(withName: ".rpg-generator").createSubfolderIfNeeded(withName: "local-library")
+                for file in folder.files.filter({ $0.nameExcludingExtension == fileToDel }) {
+                    try file.delete()
+                    print("File \(file.nameExcludingExtension) deleted")
+                }
+            } catch let error {
+                print(error.localizedDescription)
+            }
         } else if subtask.equalsIgnoreCase("clear") {
-            
+            do {
+                let folder = try Folder.home.createSubfolderIfNeeded(withName: ".rpg-generator").createSubfolderIfNeeded(withName: "local-library")
+                for file in folder.files {
+                    try file.delete()
+                    print("File \(file.nameExcludingExtension) deleted")
+                }
+                print("Files cleared")
+            } catch let error {
+                print(error.localizedDescription)
+            }
         } else if subtask.equalsIgnoreCase("load") {
             initializeRPGSTDLIB()
         } else {
