@@ -430,7 +430,40 @@ while(true) {
         print()
         print(String(data: try JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted), encoding: .utf8)!)
     } else if input == "Initialize RPGSTDLIB" {
-        //TODO: Initialize RPGSTDLIB
+        let url = URL(string: "http://sam.gauck.com/controlStatus.txt")!
+        let sessionConfig = URLSessionConfiguration.default
+        let session = URLSession(configuration: sessionConfig)
+        let request = URLRequest(url: url)
+        let task = session.downloadTask(with: request) { (tempLocalUrl, response, error) in
+            if let tempLocalUrl = tempLocalUrl, error == nil {
+                // Success
+                guard let statusCode = (response as? HTTPURLResponse)?.statusCode else {
+                    print("Response error")
+                    return
+                }
+                guard (200..<300).contains(statusCode) else {
+                    print("Bad status code: \(statusCode)")
+                    return
+                }
+                
+                do {
+                    let folder = try Folder.home.createSubfolderIfNeeded(withName: ".rpg-generator")
+                    try? folder.file(named: "RPGSTDLIB.json").delete() //delete old file if exists
+                    let file = try File(path: tempLocalUrl.path)
+                    try? file.parent?.file(named: "RPGSTDLIB.json").delete() //delete old file in temp directory if exists
+                    try file.rename(to: "RPGSTDLIB.json", keepExtension: false)
+                    try file.move(to: folder)
+                    
+                    print("Successfully initialized RPGSTDLIB")
+                } catch let writeError {
+                    print(writeError.localizedDescription)
+                }
+                
+            } else {
+                print("Failure: \(error!.localizedDescription)")
+            }
+        }
+        task.resume()
     } else {
         print("'\(input)' is unrecognized")
     }
