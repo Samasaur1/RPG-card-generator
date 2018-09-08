@@ -424,7 +424,9 @@ while(true) {
             }
         }
     } else if input.equalsIgnoreCase("n", "new", "new card") {
-        //TODO: Would you like to add or create?
+        print("Would you like to add a file from the library (either the standard library or the local library), or create a new card?")
+        print("To add a card from the library, use 'add' or 'a'")
+        print("To create a new card, use 'create' or 'c'")
     } else if input.equalsIgnoreCase("l", "list", "list card", "list cards") {
         print("JSON so far:")
         print()
