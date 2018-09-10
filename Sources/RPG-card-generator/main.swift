@@ -365,7 +365,7 @@ func save() {
         exit(1)
     }
 }
-func initializeRPGSTDLIB() {
+func initializeRPGSTDLIB(_ completion: @escaping () -> () = {}) {
     let url = URL(string: "https://raw.githubusercontent.com/Samasaur1/RPG-card-generator/master/Sources/RPG-card-generator/RPGSTDLIB.json")!
     let sessionConfig = URLSessionConfiguration.default
     let session = URLSession(configuration: sessionConfig)
@@ -391,6 +391,7 @@ func initializeRPGSTDLIB() {
                 try file.move(to: folder)
                 
                 print("Successfully initialized RPGSTDLIB")
+                completion()
             } catch let writeError {
                 print(writeError.localizedDescription)
             }
@@ -403,7 +404,12 @@ func initializeRPGSTDLIB() {
 }
 
 if CommandLine.argc > 1, CommandLine.arguments[1] == "RPGSTDLIB" {
-    initializeRPGSTDLIB()
+    let d = DispatchGroup()
+    d.enter()
+    initializeRPGSTDLIB {
+        d.leave()
+    }
+    d.wait()
     exit(0)
 }
 
