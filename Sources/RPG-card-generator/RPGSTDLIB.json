@@ -1,1 +1,1122 @@
-[{"count":1,"color":"black","title":"Arcane Bond","icon":"class-wizard","icon_back":"spell-book","contents":["subtitle | Wizard feature","rule","fill","text | Cast any spell that you have in your spellbook and are capable of casting, even if the spell is not prepared.","text | This spell is treated like any other spell cast by you, including casting time, duration, and other effects dependent on your level. This spell cannot be modified by metamagic feats or other abilities.","text | Arcane Bond cannot be used to cast spells from your opposition schools.","fill"],"tags":["class-feature","wizard"],"title_size":"16"},{"count":1,"color":"black","title":"Spell Attacks","icon":"class-wizard","icon_back":"spell-book","contents":["subtitle | Wizard reference","rule","fill","description | Ranged Touch Attacks | A ranged touch attack is made against the target's <I> touch AC</I>, not their normal AC. It's equal to <b>1d20 + Wizard level + DEX modifier</b>.","fill","description | Saving Throws | This number represents how hard it is to resist your spells. It is <b>10 + spell level + INT modifier</b>.","fill"],"tags":["class-feature","wizard"],"title_size":"16"},{"title_size":"16","icon":"drink-me","count":1,"title":"Potion of Healing","tags":["potion"],"icon_back":"drink-me","contents":["subtitle | Cure Light Wounds (50gp)","rule","property | Drinking time | 1 standard action","property | Hit points restored | 1d8 + 1","rule","fill","text | When you drink this potion, you regain <b>1d8 + 1 hitpoints</b>","text | Drinking this potion is a standard action.","text | Administering it to an unconscious creature is a full-round action.","fill","section | Undead Creatures","text | If an undead creature drinks this potion, they take damage instead. If this occurs, they can apply spell resistance and attempt a Will save to take half damage."],"color":"black","name":"Potion of Cure Light Wounds"},{"title_size":"16","icon":"white-book-0","count":1,"title":"Acid Splash","tags":["spell","level0"],"icon_back":"robe","contents":["subtitle | 0th level conjuration","rule","property | Casting Time | 1 standard action","property | Components | V, S","property | Range | close (25 ft. + 5ft./2 levels)","property | Duration | instantaneous","property | Saving Throw | none","property | Spell Resistance | no","rule","fill","text | You fire a small orb of acid that deals <b>1d3 acid damage</b>. This acid disappears after 1 round.","fill","section | At higher levels","text | +5ft. every 2 levels"],"color":"black"},{"title_size":"16","icon":"white-book-1","count":1,"title":"Alarm","tags":["spell","level1"],"icon_back":"robe","contents":["subtitle | 1st level abjuration","rule","property | Casting Time | 1 standard action","property | Components | V, S, F (bell and silver wire)","property | Range | close (25 ft. + 5ft./2 levels)","property | Area | 20ft radius emanation","property | Duration | 2 hours/level","property | Saving Throw | none","property | Spell Resistance | no","rule","fill","text | Each time a non-ethereal/astral Tiny or larger creature enters the area without saying the password, one alarm occurs:","text | <I>Mental:</I> Will wake you, but won't break concentration (1 mile range)","text | <I>Audible:</I> A bell is audible (60ft range)","fill","section | At higher levels","text | +5ft. every 2 levels, +2 hours every level"],"color":"black"},{"title_size":"16","icon":"white-book-0","count":1,"title":"Arcane Mark","tags":["spell","level0"],"icon_back":"robe","contents":["subtitle | 0th level universal","rule","property | Casting Time | 1 standard action","property | Components | V, S","property | Range | touch","property | Duration | permanent","property | Saving Throw | none","property | Spell Resistance | no","rule","fill","text | You inscribe a mark, which can be up to six characters. The writing can be visible or invisible. If invisible, a detect magic spell causes it to glow and be visible, though not necessarily understandable.","text | If an arcane mark is placed on a living being, the effect gradually fades in about a month.","fill"],"color":"black"},{"title_size":"16","icon":"white-book-0","count":1,"title":"Bleed","tags":["spell","level0"],"icon_back":"robe","contents":["subtitle | 0th level necromancy","rule","property | Casting Time | 1 standard action","property | Components | V, S","property | Range | close (25 ft. + 5ft./2 levels)","property | Target | one living creature","property | Duration | instantaneous","property | Saving Throw | Will negates","property | Spell Resistance | yes","rule","fill","text | You cause a living creature that is below 0 hit points but stabilized to resume dying. The creature can be stabilized later normally. This spell causes a creature that is dying to take 1 point of damage.","fill","section | At higher levels","text | +5ft. every 2 levels"],"color":"black"},{"count":1,"color":"black","title":"Burning Hands","icon":"white-book-1","icon_back":"robe","contents":["subtitle | 1st level evocation","rule","property | Casting time | 1 standard action","property | Components | V, S","property | Range | 15ft cone","property | Duration | instantaneous","property | Saving Throw | Reflex half","property | Spell Resistance | yes","rule","fill","text | You shoot a 15ft cone of fire. Any creature in the cone takes <b>1d4 fire damage</b> per caster level.","text | Flammable materials caught in the flames also burn.","fill","section | At higher levels","text | +1d4 damage every level"],"tags":["spell","level1"],"title_size":"16"},{"count":1,"color":"black","title":"Charm Person","icon":"white-book-1","icon_back":"robe","contents":["subtitle | 1st level enchantment","rule","property | Casting time | 1 standard action","property | Components | V, S","property | Range | close (25 ft. + 5 ft./2 levels)","property | Duration | 1 hour/level","property | Saving Throw | Will negates","property | Spell Resistance | yes","rule","fill","text | Make a humanoid creature regard you as its trusted friend and ally (treat the target's attitude as friendly).","text | Threats or attacks by you or your allies give a +5 bonus to the creature's saving throw, or ends the spell.","fill","section | At higher levels","text | +5ft every 2 levels, +1 hour every level"],"tags":["spell","level1"],"title_size":"16"},{"title_size":"16","icon":"white-book-0","count":1,"title":"Dancing Lights","tags":["spell","level0"],"icon_back":"robe","contents":["subtitle | 0th level evocation","rule","property | Casting Time | 1 standard action","property | Components | V, S","property | Range | medium (100 ft. + 10 ft./level)","property | Duration | 1 minute","property | Saving Throw | none","property | Spell Resistance | no","rule","fill","text | You create up to 4 lights that resemble lanterns or torches, or 4 glowing spheres, or a faintly glowing vaguely humanoid shape.","text | The dancing lights must stay within a 10-foot-radius area but can move without concentration.","fill","section | At higher levels","text | +10ft. every level"],"color":"black"},{"title_size":"16","icon":"white-book-0","count":1,"title":"Daze","tags":["spell","level0"],"icon_back":"robe","contents":["subtitle | 0th level enchantment","rule","property | Casting Time | 1 standard action","property | Components | V, S, M (a pinch of wool)","property | Range | close (25 ft. + 5 ft./2 levels)","property | Target | humanoid with 4 HD or less","property | Duration | 1 round","property | Saving Throw | Will negates","property | Spell Resistance | yes","rule","fill","text | The target takes no actions. A dazed subject is not stunned, so attackers get no special advantage against it.","text | After a creature has been dazed by this spell, it is immune to the effects of this spell for 1 minute.","fill","section | At higher levels","text | +5ft. every 2 levels"],"color":"black"},{"title_size":"16","icon":"white-book-0","count":1,"title":"Detect Magic","tags":["spell","level0"],"icon_back":"robe","contents":["subtitle | 0th level abjuration","rule","property | Casting Time | 1 standard action","property | Components | V, S","property | Range | 60ft. cone","property | Duration | concentration (1 min/level)","property | Saving Throw | none","property | Spell Resistance | no","rule","fill","text | You detect magical auras. The amount of information revealed depends on how long you study a particular area or subject.","text | <I>1st Round:</I> Presence or absence of auras.","text | <I>2nd Round:</I> Number of auras, power of the strongest.","text | <I>3rd Round:</I> Strength and location of each aura.","fill"],"color":"black"},{"title_size":"16","icon":"white-book-0","count":1,"title":"Detect Poison","tags":["spell","level0"],"icon_back":"robe","contents":["subtitle | 0th level divination","rule","property | Casting Time | 1 standard action","property | Components | V, S","property | Range | close (25 ft. + 5 ft./2 levels)","property | Target | one creature, object, or 5ft. cube","property | Duration | instantaneous","property | Saving Throw | none","property | Spell Resistance | no","rule","fill","text | You determine whether a creature, object, or area has been poisoned or is poisonous. You can determine the exact type of poison with a DC 20 Wisdom check.","fill","section | At higher levels","text | +5ft. every 2 levels"],"color":"black"},{"title_size":"15","icon":"white-book-1","count":1,"title":"Detect Secret Doors","tags":["spell","level1"],"icon_back":"robe","contents":["subtitle | 1st level divination","rule","property | Casting Time | 1 standard action","property | Components | V, S","property | Range | 60ft cone","property | Duration | concentration, up to 1 minute per level.","property | Saving Throw | none","property | Spell Resistance | no","rule","fill","text | You can detect doors or other openings designed not to be detected. The longer you cast, the more information you find.","text | <I>1st round:</I> Presence or absence of doors.","text | <I>2nd round:</I> Number and location.","text | <I>Each additional round:</I> Opening mechanism (1 door/round).","fill"],"color":"black"},{"title_size":"16","icon":"white-book-0","count":1,"title":"Disrupt Undead","tags":["spell","level0"],"icon_back":"robe","contents":["subtitle | 0th level necromancy","rule","property | Casting Time | 1 standard action","property | Components | V, S","property | Range | close (25 ft. + 5ft./2 levels)","property | Duration | instantaneous","property | Saving Throw | none","property | Spell Resistance | yes","rule","fill","text | You direct a ray of positive energy. If it hits an undead creature, it deals <b>1d6 damage</b> to it.","fill","section | At higher levels","text | +5ft. every 2 levels"],"color":"black"},{"count":1,"color":"black","title":"Feather Fall","icon":"white-book-1","icon_back":"robe","contents":["subtitle | 1st level transmutation","rule","property | Casting time | 1 immediate action","property | Components | V","property | Range | close (25 ft. + 5 ft./2 levels)","property | Targets | one Medium or smaller freefalling creature or object per level, within 20ft of each other.","property | Duration | until landing or 1 round/level","property | Saving Throw | Will negates (harmless)","property | Spell Resistance | yes (object)","rule","fill","text | The targets fall at 60 feet per round, taking no damage upon landing. When the spell duration expires, a normal rate of falling resumes.","fill","section | At higher levels","text | +1d4 damage every level"],"tags":["spell","level1"],"title_size":"16"},{"title_size":"16","icon":"white-book-0","count":1,"title":"Flare","tags":["spell","level0"],"icon_back":"robe","contents":["subtitle | 0th level evocation","rule","property | Casting Time | 1 standard action","property | Components | V","property | Range | close (25 ft. + 5 ft./2 levels)","property | Duration | instantaneous","property | Saving Throw | Fortitude negates","property | Spell Resistance | yes","rule","fill","text | You create a burst of light. If it bursts in front of a single creature, that creature is dazzled for 1 minute unless it makes a successful Fortitude save.","text | Sightless creatures, as well as creatures already dazzled, are not affected by <I>flare</I>.","fill","section | At higher levels","text | +5ft. every 2 levels"],"color":"black"},{"title_size":"16","icon":"white-book-0","count":1,"title":"Ghost Sound","tags":["spell","level0"],"icon_back":"robe","contents":["subtitle | 0th level illusion","rule","property | Casting Time | 1 standard action","property | Components | V, S, M (wool or wax)","property | Range | close (25 ft. + 5ft./2 levels)","property | Duration | 1 round/level","property | Saving Throw | Will disbelief","property | Spell Resistance | no","rule","fill","text | You create illusory sounds. You can produce as much noise as four normal humans per caster level (maximum 40 humans). Anyone who hears a ghost sound receives a Will save to disbelieve.","text | <I>Ghost sound</I> can enhance the effectiveness of a <I>silent image</I> spell.","fill","section | At higher levels","text | +5ft. every 2 levels, +1 round every level"],"color":"black"},{"title_size":"16","icon":"white-book-0","count":1,"title":"Light","tags":["spell","level0"],"icon_back":"robe","contents":["subtitle | 0th level evocation","rule","property | Casting Time | 1 standard action","property | Components | V, M (a firefly)","property | Range | touch","property | Duration | 10 minutes/level","property | Saving Throw | none","property | Spell Resistance | no","rule","fill","text | This spell makes a touched object glow like a torch.","text | In an area of normal or bright light, this spell has no effect.","text | The effect is immobile, but it can be cast on a movable object.","fill","section | At higher levels","text | +10 minutes every level"],"color":"black"},{"title_size":"16","icon":"white-book-1","count":1,"title":"Mage Armor","tags":["spell","level1"],"icon_back":"robe","contents":["subtitle | 1st level conjuration","rule","property | Casting Time | 1 standard action","property | Components | V, S, F (cured leather)","property | Range | touch","property | Target | creature touched","property | Duration | 1 hour/level","property | Saving Throw | Will negates (harmless)","property | Spell Resistance | no","rule","fill","text | An invisible force field surrounds the target, providing a <b>+4 bonus to AC</b>.","text | Mage armor incurs no penalties, and cannot be bypassed by incorporeal creatures.","fill","section | At higher levels","text | +1 hour every level"],"color":"black"},{"title_size":"16","icon":"white-book-0","count":1,"title":"Mage Hand","tags":["spell","level0"],"icon_back":"robe","contents":["subtitle | 0th level transmutation","rule","property | Casting Time | 1 standard action","property | Components | V, S","property | Range | close (25 ft. + 5 ft./2 levels)","property | Target | one nonmagical, unattended object weighing up to 5 lbs.","property | Duration | concentration","property | Saving Throw | none","property | Spell Resistance | no","rule","fill","text | You can move the target object at will from a distance. As a move action, you can propel the object up to 15 feet in any direction. If it moves out of range, the spell ends.","fill","section | At higher levels","text | +5ft. every 2 levels"],"color":"black"},{"title_size":"16","icon":"white-book-1","count":1,"title":"Magic Missile","tags":["spell","level1"],"icon_back":"robe","contents":["subtitle | 1st level evocation","rule","property | Casting Time | 1 standard action","property | Components | V, S","property | Range | medium (100 ft. + 10 ft./level)","property | Target | up to five creatures, no two of which can be more than 15 ft. apart","property | Duration | instantaneous","property | Saving Throw | none","property | Spell Resistance | yes","rule","fill","text | You shoot (a) magic missile(s) that deals <b>1d4+1</b> damage. The missile hits anyone without total cover or concealment.","fill","section | At higher levels","text | +1 missile every 2 levels (max 5 at level 9). These can target separate targets."],"color":"black"},{"title_size":"16","icon":"white-book-0","count":1,"title":"Mending","tags":["spell","level0"],"icon_back":"robe","contents":["subtitle | 0th level transmutation","rule","property | Casting Time | 10 minutes","property | Components | V, S","property | Range | 10 ft.","property | Target | one object of up to 1 lb./level","property | Duration | instantaneous","property | Saving Throw | Will negates (harmless)","property | Spell Resistance | yes (harmless, object)","rule","fill","text | You <b>restore 1d4 hit points</b> to the object. All pieces must be present. You can repair Magic items, but you must have a caster level equal to or higher than that of the object.","fill","section | At higher levels","text | You can mend heavier objects"],"color":"black"},{"title_size":"16","icon":"white-book-0","count":1,"title":"Message","tags":["spell","level0"],"icon_back":"robe","contents":["subtitle | 0th level transmutation","rule","property | Casting Time | 1 standard action","property | Components | V, S, F (copper wire)","property | Range | medium (100 ft. + 10 ft./level)","property | Target | one creature/level","property | Duration | 10 min./level","property | Saving Throw | none","property | Spell Resistance | no","rule","fill","text | You can whisper messages and receive whispered replies. Those nearby can hear these messages with a DC 25 Perception check.","text | The message does not have to travel in a straight line.","fill","section | At higher levels","text | +10 ft., +1 creature, +10 minutes/level"],"color":"black"},{"title_size":"16","icon":"white-book-0","count":1,"title":"Open/Close","tags":["spell","level0"],"icon_back":"robe","contents":["subtitle | 0th level transmutation","rule","property | Casting Time | 1 standard action","property | Components | V, S, F (brass key)","property | Range | close (25 ft. + 5 ft./2 levels)","property | Target | object weighing up to 30 lbs. or portal that can be opened or closed","property | Duration | instantaneous","property | Saving Throw | Will negates (object)","property | Spell Resistance | yes (object)","rule","fill","text | You can open or close (your choice) a container.","text | If anything resists this activity the spell fails.","fill","section | At higher levels","text | +5 ft every 2 levels"],"color":"black"},{"title_size":"16","icon":"white-book-0","count":1,"title":"Prestidigitation","tags":["spell","level0"],"icon_back":"robe","contents":["subtitle | 0th level universal","rule","property | Casting Time | 1 standard action","property | Components | V, S","property | Range | 10ft.","property | Duration | 1 hour","property | Saving Throw | see text","property | Spell Resistance | no","rule","fill","text | Once cast, a <I>prestidigitation</I> spell enables you to perform simple magical effects for 1 hour.","text | It cannot deal damage or affect the concentration of spellcasters.","text | Any actual change to an object (beyond just moving, cleaning, or soiling it) persists only 1 hour.","fill"],"color":"black"},{"title_size":"16","icon":"white-book-0","count":1,"title":"Ray of Frost","tags":["spell","level0"],"icon_back":"robe","contents":["subtitle | 0th level evocation","rule","property | Casting Time | 1 standard action","property | Components | V, S","property | Range | close (25 ft. + 5ft./2 levels)","property | Duration | instantaneous","property | Saving Throw | none","property | Spell Resistance | no","rule","fill","text | You shoot a ray of freezing air and ice from your finger. It deals <b>1d3 cold damage</b>.","fill","section | At higher levels","text | +5ft. every 2 levels"],"color":"black"},{"title_size":"16","icon":"white-book-0","count":1,"title":"Read Magic","tags":["spell","level0"],"icon_back":"robe","contents":["subtitle | 0th level divination","rule","property | Casting Time | 1 standard action","property | Components | V, S, F (clear crystal/prism)","property | Range | personal","property | Target | you","property | Duration | 10 min/level","rule","fill","text | You can decipher magical inscriptions on objects—books, scrolls, weapons, and the like—that would otherwise be unintelligible. Once the spell is cast and you have read the magical inscription, you can always read it.","text | You can read at the rate of one page (250 words) per minute. ","fill","section | At higher levels","text | +10 minutes every level"],"color":"black"},{"title_size":"16","icon":"white-book-0","count":1,"title":"Resistance","tags":["spell","level0"],"icon_back":"robe","contents":["subtitle | 0th level abjuration","rule","property | Casting Time | 1 standard action","property | Components | V, S, M (a miniature cloak)","property | Range | touch","property | Target | creature touched","property | Duration | 1 minute","property | Saving Throw | Will negates (harmless)","property | Spell Resistance | yes (harmless)","rule","fill","text | You imbue the subject with magical energy that protects it from harm, granting it a <b>+1 resistance bonus on saves.</b>","text | <I>Resistance</I> can be made permanent with a <I>permanency</I> spell.","fill"],"color":"black"},{"count":1,"color":"black","title":"Scorching Ray","icon":"white-book-2","icon_back":"robe","contents":["subtitle | 2nd level evocation","rule","property | Casting time | 1 standard action","property | Components | V, S","property | Range | close (25 ft. + 5 ft./2 levels)","property | Duration | instantaneous","property | Saving Throw | none","property | Spell Resistance | yes","rule","fill","text | You shoot (a) beam(s) that deal(s) <b>4d6 fire damage</b>. The beams can be fired at different targets less than 30ft apart, but must be fired at the same time.","fill","section | At higher levels","text | +5ft every 2 levels, +1 ray every four levels after 3rd (max 3 at level 11)."],"tags":["spell","level2"],"title_size":"16"},{"count":1,"color":"black","title":"Shield","icon":"white-book-1","icon_back":"robe","contents":["subtitle | 1st level abjuration","rule","property | Casting time | 1 standard action","property | Components | V, S","property | Range | personal","property | Duration | 1 minute/level","rule","fill","text | Create an invisible shield of force that hovers in front of you, negating magic missile attacks. It also provides a <b>+4 shield bonus to AC</b>.","text | This bonus applies against incorporeal touch attacks, since it is a force effect. The shield has no armor check penalty or arcane spell failure chance.","fill","section | At higher levels","text | +1 minute every level"],"tags":["spell","level1"],"title_size":"16"},{"title_size":"16","icon":"white-book-1","count":1,"title":"Sleep","tags":["spell","level1"],"icon_back":"robe","contents":["subtitle | 1st level enchantment","rule","property | Casting Time | 1 round","property | Components | V, S, F (fine sand, rose petals, or a live cricket)","property | Range | medium (100 ft. + 10 ft./level)","property | Target | living creatures in a 10ft. radius","property | Duration | 1 min/level","property | Saving Throw | Will negates","property | Spell Resistance | yes","rule","fill","text | The target(s) fall into a magical slumber, becoming helpless. Normal noise will not awaken the target(s), but a standard action or taking damage will do so.","fill","section | At higher levels","text | +1 minute and +10ft range every level"],"color":"black"},{"title_size":"16","icon":"white-book-1","count":1,"title":"Summon Monster I","tags":["spell","level1"],"icon_back":"robe","contents":["subtitle | 1st level conjuration","rule","property | Casting Time | 1 round","property | Components | V, S, F (tiny bag & candle)","property | Range | close (25 ft. + 5 ft./2 levels)","property | Target | living creatures in a 10ft. radius","property | Duration | 1 round/level","property | Saving Throw | none","property | Spell Resistance | no","rule","fill","text | Summon a creature where you designate. It acts immediately on your turn, attacking your opponents. You can direct it if you can communicate with it.","text | Choose a creature from the level 1 list.","fill","section | At higher levels","text | +1 round every level, +5ft. every 2 levels"],"color":"black"},{"title_size":"13","icon":"list.js","count":1,"title":"Summon Monster I (List)","tags":["spelllist","level1",""],"icon_back":"robe","contents":["text | This is the list of monsters that can be summoned at level 1","rule","bullet | Dire rat","bullet | Dog","bullet | Dolphin","bullet | Eagle","bullet | Fire beetle","bullet | Poisonous frog","bullet | Pony (horse)","bullet | Viper (snake)","rule","text | These creatures are summoned with the celestial template if you are good, or the fiendish template if you are evil; you may choose either if you are neutral.",""],"color":"black"},{"title_size":"16","icon":"white-book-0","count":1,"title":"Touch of Fatigue","tags":["spell","level0"],"icon_back":"robe","contents":["subtitle | 0th level necromancy","rule","property | Casting Time | 1 standard action","property | Components | V, S, M (a drop of sweat)","property | Range | touch","property | Duration | 1 round/level","property | Saving Throw | Fortitude negates","property | Spell Resistance | yes","rule","fill","text | You channel negative energy through your touch, fatiguing the target for the spell's duration.","text | This spell has no effect on a creature that is already fatigued. Unlike with normal fatigue, the effect ends as soon as the spell's duration expires.","fill","section | At higher levels","text | +5ft. every 2 levels"],"color":"black"},{"title_size":"16","icon":"broadsword","count":1,"title":"Greatsword","tags":["weapon","melee"],"icon_back":"crossed-swords","contents":["subtitle | Martial melee weapon (50gp)","rule","property | Damage | 2d6 S","property | Critical | 19-20/x2","property | Attack Modifier | Strength","property | Damage Modifier | Strength","rule","fill","description | Attack | Roll 1d20 + STR. If the result is greater than or equal to the target's AC, you hit.","description | Critical Hits | If you rolled a <b>natural</b> 19-20 on your attack roll, it's a <i>critical threat</i>. Roll again. If you hit, the critical hit is confirmed.","description | Damage | Roll 2d6 + STR. If you made a critical hit, roll 1 more time and add the results together. The target takes this much damage.","fill"],"color":"black"},{"title_size":"16","icon":"bow-arrow","count":1,"title":"Longbow","tags":["weapon","ranged"],"icon_back":"crossed-swords","contents":["subtitle | Martial ranged weapon (75gp)","rule","property | Damage | 1d8 P","property | Critical | 20/x3","property | Attack Modifier | Dexterity","property | Range | 100ft.","rule","fill","description | Attack | Roll 1d20 + DEX. If the result is greater than or equal to the target's AC, you hit.","description | Critical Hits | If you rolled a <b>natural</b> 20 on your attack roll, it's a <i>critical threat</i>. Roll again. If you hit, the critical hit is confirmed.","description | Damage | Roll 1d8. If you made a critical hit, roll 2 more times and add the results together. The target takes this much damage.","fill"],"color":"black"},{"title_size":"16","icon":"arrow-cluster","count":1,"title":"Crossbow Bolts (10)","tags":["ammunition"],"icon_back":"quiver","contents":["subtitle | Ammunition (10pcs) (1gp)","rule","property | Usage | heavy crossbows, light crossbows, hand crossbows","rule","fill","description | Heavy Crossbows | Crossbow bolts are the standard ammunition for heavy crossbows.","description | Light Crossbows | Crossbow bolts are the standard ammunition for light crossbows.","description | Hand Crossbows | Crossbow bolts are the standard ammunition for hand crossbows.","fill","rule","boxes | 10 | 1.66"],"color":"black"}]
+[
+  {
+    "title_size": "16",
+    "icon": "drink-me",
+    "count": 1,
+    "title": "Potion of Healing",
+    "tags": [
+      "potion"
+    ],
+    "icon_back": "drink-me",
+    "contents": [
+      "subtitle | Cure Moderate Wounds (300gp)",
+      "rule",
+      "property | Drinking time | 1 standard action",
+      "property | Hit points restored | 2d8 + 3",
+      "rule",
+      "fill",
+      "text | When you drink this potion, you regain <b>2d8 + 3 hitpoints</b>",
+      "text | Drinking this potion is a standard action.",
+      "text | Administering it to an unconscious creature is a full-round action.",
+      "fill",
+      "section | Undead Creatures",
+      "text | If an undead creature drinks this potion, they take damage instead. If this occurs, they can apply spell resistance and attempt a Will save to take half damage."
+    ],
+    "color": "black",
+    "name": "Potion of Cure Light Wounds"
+  },
+  {
+    "title_size": "16",
+    "icon": "drink-me",
+    "count": 1,
+    "title": "Potion of Healing",
+    "tags": [
+      "potion"
+    ],
+    "icon_back": "drink-me",
+    "contents": [
+      "subtitle | Cure Serious Wounds (750gp)",
+      "rule",
+      "property | Drinking time | 1 standard action",
+      "property | Hit points restored | 3d8 + 5",
+      "rule",
+      "fill",
+      "text | When you drink this potion, you regain <b>3d8 + 5 hitpoints</b>",
+      "text | Drinking this potion is a standard action.",
+      "text | Administering it to an unconscious creature is a full-round action.",
+      "fill",
+      "section | Undead Creatures",
+      "text | If an undead creature drinks this potion, they take damage instead. If this occurs, they can apply spell resistance and attempt a Will save to take half damage."
+    ],
+    "color": "black",
+    "name": "Potion of Cure Light Wounds"
+  },
+  {
+    "count": 1,
+    "color": "black",
+    "title": "Arcane Bond",
+    "icon": "class-wizard",
+    "icon_back": "spell-book",
+    "contents": [
+      "subtitle | Wizard feature",
+      "rule",
+      "fill",
+      "text | Cast any spell that you have in your spellbook and are capable of casting, even if the spell is not prepared.",
+      "text | This spell is treated like any other spell cast by you, including casting time, duration, and other effects dependent on your level. This spell cannot be modified by metamagic feats or other abilities.",
+      "text | Arcane Bond cannot be used to cast spells from your opposition schools.",
+      "fill"
+    ],
+    "tags": [
+      "class-feature",
+      "wizard"
+    ],
+    "title_size": "16"
+  },
+  {
+    "count": 1,
+    "color": "black",
+    "title": "Spell Attacks",
+    "icon": "class-wizard",
+    "icon_back": "spell-book",
+    "contents": [
+      "subtitle | Wizard reference",
+      "rule",
+      "fill",
+      "description | Ranged Touch Attacks | A ranged touch attack is made against the target's <I> touch AC</I>, not their normal AC. It's equal to <b>1d20 + Wizard level + DEX modifier</b>.",
+      "fill",
+      "description | Saving Throws | This number represents how hard it is to resist your spells. It is <b>10 + spell level + INT modifier</b>.",
+      "fill"
+    ],
+    "tags": [
+      "class-feature",
+      "wizard"
+    ],
+    "title_size": "16"
+  },
+  {
+    "title_size": "16",
+    "icon": "drink-me",
+    "count": 1,
+    "title": "Potion of Healing",
+    "tags": [
+      "potion"
+    ],
+    "icon_back": "drink-me",
+    "contents": [
+      "subtitle | Cure Light Wounds (50gp)",
+      "rule",
+      "property | Drinking time | 1 standard action",
+      "property | Hit points restored | 1d8 + 1",
+      "rule",
+      "fill",
+      "text | When you drink this potion, you regain <b>1d8 + 1 hitpoints</b>",
+      "text | Drinking this potion is a standard action.",
+      "text | Administering it to an unconscious creature is a full-round action.",
+      "fill",
+      "section | Undead Creatures",
+      "text | If an undead creature drinks this potion, they take damage instead. If this occurs, they can apply spell resistance and attempt a Will save to take half damage."
+    ],
+    "color": "black",
+    "name": "Potion of Cure Light Wounds"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-0",
+    "count": 1,
+    "title": "Acid Splash",
+    "tags": [
+      "spell",
+      "level0"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 0th level conjuration",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V, S",
+      "property | Range | close (25 ft. + 5ft./2 levels)",
+      "property | Duration | instantaneous",
+      "property | Saving Throw | none",
+      "property | Spell Resistance | no",
+      "rule",
+      "fill",
+      "text | You fire a small orb of acid that deals <b>1d3 acid damage</b>. This acid disappears after 1 round.",
+      "fill",
+      "section | At higher levels",
+      "text | +5ft. every 2 levels"
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-1",
+    "count": 1,
+    "title": "Alarm",
+    "tags": [
+      "spell",
+      "level1"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 1st level abjuration",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V, S, F (bell and silver wire)",
+      "property | Range | close (25 ft. + 5ft./2 levels)",
+      "property | Area | 20ft radius emanation",
+      "property | Duration | 2 hours/level",
+      "property | Saving Throw | none",
+      "property | Spell Resistance | no",
+      "rule",
+      "fill",
+      "text | Each time a non-ethereal/astral Tiny or larger creature enters the area without saying the password, one alarm occurs:",
+      "text | <I>Mental:</I> Will wake you, but won't break concentration (1 mile range)",
+      "text | <I>Audible:</I> A bell is audible (60ft range)",
+      "fill",
+      "section | At higher levels",
+      "text | +5ft. every 2 levels, +2 hours every level"
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-0",
+    "count": 1,
+    "title": "Arcane Mark",
+    "tags": [
+      "spell",
+      "level0"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 0th level universal",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V, S",
+      "property | Range | touch",
+      "property | Duration | permanent",
+      "property | Saving Throw | none",
+      "property | Spell Resistance | no",
+      "rule",
+      "fill",
+      "text | You inscribe a mark, which can be up to six characters. The writing can be visible or invisible. If invisible, a detect magic spell causes it to glow and be visible, though not necessarily understandable.",
+      "text | If an arcane mark is placed on a living being, the effect gradually fades in about a month.",
+      "fill"
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-0",
+    "count": 1,
+    "title": "Bleed",
+    "tags": [
+      "spell",
+      "level0"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 0th level necromancy",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V, S",
+      "property | Range | close (25 ft. + 5ft./2 levels)",
+      "property | Target | one living creature",
+      "property | Duration | instantaneous",
+      "property | Saving Throw | Will negates",
+      "property | Spell Resistance | yes",
+      "rule",
+      "fill",
+      "text | You cause a living creature that is below 0 hit points but stabilized to resume dying. The creature can be stabilized later normally. This spell causes a creature that is dying to take 1 point of damage.",
+      "fill",
+      "section | At higher levels",
+      "text | +5ft. every 2 levels"
+    ],
+    "color": "black"
+  },
+  {
+    "count": 1,
+    "color": "black",
+    "title": "Burning Hands",
+    "icon": "white-book-1",
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 1st level evocation",
+      "rule",
+      "property | Casting time | 1 standard action",
+      "property | Components | V, S",
+      "property | Range | 15ft cone",
+      "property | Duration | instantaneous",
+      "property | Saving Throw | Reflex half",
+      "property | Spell Resistance | yes",
+      "rule",
+      "fill",
+      "text | You shoot a 15ft cone of fire. Any creature in the cone takes <b>1d4 fire damage</b> per caster level.",
+      "text | Flammable materials caught in the flames also burn.",
+      "fill",
+      "section | At higher levels",
+      "text | +1d4 damage every level"
+    ],
+    "tags": [
+      "spell",
+      "level1"
+    ],
+    "title_size": "16"
+  },
+  {
+    "count": 1,
+    "color": "black",
+    "title": "Charm Person",
+    "icon": "white-book-1",
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 1st level enchantment",
+      "rule",
+      "property | Casting time | 1 standard action",
+      "property | Components | V, S",
+      "property | Range | close (25 ft. + 5 ft./2 levels)",
+      "property | Duration | 1 hour/level",
+      "property | Saving Throw | Will negates",
+      "property | Spell Resistance | yes",
+      "rule",
+      "fill",
+      "text | Make a humanoid creature regard you as its trusted friend and ally (treat the target's attitude as friendly).",
+      "text | Threats or attacks by you or your allies give a +5 bonus to the creature's saving throw, or ends the spell.",
+      "fill",
+      "section | At higher levels",
+      "text | +5ft every 2 levels, +1 hour every level"
+    ],
+    "tags": [
+      "spell",
+      "level1"
+    ],
+    "title_size": "16"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-0",
+    "count": 1,
+    "title": "Dancing Lights",
+    "tags": [
+      "spell",
+      "level0"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 0th level evocation",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V, S",
+      "property | Range | medium (100 ft. + 10 ft./level)",
+      "property | Duration | 1 minute",
+      "property | Saving Throw | none",
+      "property | Spell Resistance | no",
+      "rule",
+      "fill",
+      "text | You create up to 4 lights that resemble lanterns or torches, or 4 glowing spheres, or a faintly glowing vaguely humanoid shape.",
+      "text | The dancing lights must stay within a 10-foot-radius area but can move without concentration.",
+      "fill",
+      "section | At higher levels",
+      "text | +10ft. every level"
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-0",
+    "count": 1,
+    "title": "Daze",
+    "tags": [
+      "spell",
+      "level0"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 0th level enchantment",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V, S, M (a pinch of wool)",
+      "property | Range | close (25 ft. + 5 ft./2 levels)",
+      "property | Target | humanoid with 4 HD or less",
+      "property | Duration | 1 round",
+      "property | Saving Throw | Will negates",
+      "property | Spell Resistance | yes",
+      "rule",
+      "fill",
+      "text | The target takes no actions. A dazed subject is not stunned, so attackers get no special advantage against it.",
+      "text | After a creature has been dazed by this spell, it is immune to the effects of this spell for 1 minute.",
+      "fill",
+      "section | At higher levels",
+      "text | +5ft. every 2 levels"
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-0",
+    "count": 1,
+    "title": "Detect Magic",
+    "tags": [
+      "spell",
+      "level0"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 0th level abjuration",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V, S",
+      "property | Range | 60ft. cone",
+      "property | Duration | concentration (1 min/level)",
+      "property | Saving Throw | none",
+      "property | Spell Resistance | no",
+      "rule",
+      "fill",
+      "text | You detect magical auras. The amount of information revealed depends on how long you study a particular area or subject.",
+      "text | <I>1st Round:</I> Presence or absence of auras.",
+      "text | <I>2nd Round:</I> Number of auras, power of the strongest.",
+      "text | <I>3rd Round:</I> Strength and location of each aura.",
+      "fill"
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-0",
+    "count": 1,
+    "title": "Detect Poison",
+    "tags": [
+      "spell",
+      "level0"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 0th level divination",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V, S",
+      "property | Range | close (25 ft. + 5 ft./2 levels)",
+      "property | Target | one creature, object, or 5ft. cube",
+      "property | Duration | instantaneous",
+      "property | Saving Throw | none",
+      "property | Spell Resistance | no",
+      "rule",
+      "fill",
+      "text | You determine whether a creature, object, or area has been poisoned or is poisonous. You can determine the exact type of poison with a DC 20 Wisdom check.",
+      "fill",
+      "section | At higher levels",
+      "text | +5ft. every 2 levels"
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "15",
+    "icon": "white-book-1",
+    "count": 1,
+    "title": "Detect Secret Doors",
+    "tags": [
+      "spell",
+      "level1"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 1st level divination",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V, S",
+      "property | Range | 60ft cone",
+      "property | Duration | concentration, up to 1 minute per level.",
+      "property | Saving Throw | none",
+      "property | Spell Resistance | no",
+      "rule",
+      "fill",
+      "text | You can detect doors or other openings designed not to be detected. The longer you cast, the more information you find.",
+      "text | <I>1st round:</I> Presence or absence of doors.",
+      "text | <I>2nd round:</I> Number and location.",
+      "text | <I>Each additional round:</I> Opening mechanism (1 door/round).",
+      "fill"
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-0",
+    "count": 1,
+    "title": "Disrupt Undead",
+    "tags": [
+      "spell",
+      "level0"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 0th level necromancy",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V, S",
+      "property | Range | close (25 ft. + 5ft./2 levels)",
+      "property | Duration | instantaneous",
+      "property | Saving Throw | none",
+      "property | Spell Resistance | yes",
+      "rule",
+      "fill",
+      "text | You direct a ray of positive energy. If it hits an undead creature, it deals <b>1d6 damage</b> to it.",
+      "fill",
+      "section | At higher levels",
+      "text | +5ft. every 2 levels"
+    ],
+    "color": "black"
+  },
+  {
+    "count": 1,
+    "color": "black",
+    "title": "Feather Fall",
+    "icon": "white-book-1",
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 1st level transmutation",
+      "rule",
+      "property | Casting time | 1 immediate action",
+      "property | Components | V",
+      "property | Range | close (25 ft. + 5 ft./2 levels)",
+      "property | Targets | one Medium or smaller freefalling creature or object per level, within 20ft of each other.",
+      "property | Duration | until landing or 1 round/level",
+      "property | Saving Throw | Will negates (harmless)",
+      "property | Spell Resistance | yes (object)",
+      "rule",
+      "fill",
+      "text | The targets fall at 60 feet per round, taking no damage upon landing. When the spell duration expires, a normal rate of falling resumes.",
+      "fill",
+      "section | At higher levels",
+      "text | +1d4 damage every level"
+    ],
+    "tags": [
+      "spell",
+      "level1"
+    ],
+    "title_size": "16"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-0",
+    "count": 1,
+    "title": "Flare",
+    "tags": [
+      "spell",
+      "level0"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 0th level evocation",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V",
+      "property | Range | close (25 ft. + 5 ft./2 levels)",
+      "property | Duration | instantaneous",
+      "property | Saving Throw | Fortitude negates",
+      "property | Spell Resistance | yes",
+      "rule",
+      "fill",
+      "text | You create a burst of light. If it bursts in front of a single creature, that creature is dazzled for 1 minute unless it makes a successful Fortitude save.",
+      "text | Sightless creatures, as well as creatures already dazzled, are not affected by <I>flare</I>.",
+      "fill",
+      "section | At higher levels",
+      "text | +5ft. every 2 levels"
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-0",
+    "count": 1,
+    "title": "Ghost Sound",
+    "tags": [
+      "spell",
+      "level0"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 0th level illusion",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V, S, M (wool or wax)",
+      "property | Range | close (25 ft. + 5ft./2 levels)",
+      "property | Duration | 1 round/level",
+      "property | Saving Throw | Will disbelief",
+      "property | Spell Resistance | no",
+      "rule",
+      "fill",
+      "text | You create illusory sounds. You can produce as much noise as four normal humans per caster level (maximum 40 humans). Anyone who hears a ghost sound receives a Will save to disbelieve.",
+      "text | <I>Ghost sound</I> can enhance the effectiveness of a <I>silent image</I> spell.",
+      "fill",
+      "section | At higher levels",
+      "text | +5ft. every 2 levels, +1 round every level"
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-0",
+    "count": 1,
+    "title": "Light",
+    "tags": [
+      "spell",
+      "level0"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 0th level evocation",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V, M (a firefly)",
+      "property | Range | touch",
+      "property | Duration | 10 minutes/level",
+      "property | Saving Throw | none",
+      "property | Spell Resistance | no",
+      "rule",
+      "fill",
+      "text | This spell makes a touched object glow like a torch.",
+      "text | In an area of normal or bright light, this spell has no effect.",
+      "text | The effect is immobile, but it can be cast on a movable object.",
+      "fill",
+      "section | At higher levels",
+      "text | +10 minutes every level"
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-1",
+    "count": 1,
+    "title": "Mage Armor",
+    "tags": [
+      "spell",
+      "level1"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 1st level conjuration",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V, S, F (cured leather)",
+      "property | Range | touch",
+      "property | Target | creature touched",
+      "property | Duration | 1 hour/level",
+      "property | Saving Throw | Will negates (harmless)",
+      "property | Spell Resistance | no",
+      "rule",
+      "fill",
+      "text | An invisible force field surrounds the target, providing a <b>+4 bonus to AC</b>.",
+      "text | Mage armor incurs no penalties, and cannot be bypassed by incorporeal creatures.",
+      "fill",
+      "section | At higher levels",
+      "text | +1 hour every level"
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-0",
+    "count": 1,
+    "title": "Mage Hand",
+    "tags": [
+      "spell",
+      "level0"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 0th level transmutation",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V, S",
+      "property | Range | close (25 ft. + 5 ft./2 levels)",
+      "property | Target | one nonmagical, unattended object weighing up to 5 lbs.",
+      "property | Duration | concentration",
+      "property | Saving Throw | none",
+      "property | Spell Resistance | no",
+      "rule",
+      "fill",
+      "text | You can move the target object at will from a distance. As a move action, you can propel the object up to 15 feet in any direction. If it moves out of range, the spell ends.",
+      "fill",
+      "section | At higher levels",
+      "text | +5ft. every 2 levels"
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-1",
+    "count": 1,
+    "title": "Magic Missile",
+    "tags": [
+      "spell",
+      "level1"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 1st level evocation",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V, S",
+      "property | Range | medium (100 ft. + 10 ft./level)",
+      "property | Target | up to five creatures, no two of which can be more than 15 ft. apart",
+      "property | Duration | instantaneous",
+      "property | Saving Throw | none",
+      "property | Spell Resistance | yes",
+      "rule",
+      "fill",
+      "text | You shoot (a) magic missile(s) that deals <b>1d4+1</b> damage. The missile hits anyone without total cover or concealment.",
+      "fill",
+      "section | At higher levels",
+      "text | +1 missile every 2 levels (max 5 at level 9). These can target separate targets."
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-0",
+    "count": 1,
+    "title": "Mending",
+    "tags": [
+      "spell",
+      "level0"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 0th level transmutation",
+      "rule",
+      "property | Casting Time | 10 minutes",
+      "property | Components | V, S",
+      "property | Range | 10 ft.",
+      "property | Target | one object of up to 1 lb./level",
+      "property | Duration | instantaneous",
+      "property | Saving Throw | Will negates (harmless)",
+      "property | Spell Resistance | yes (harmless, object)",
+      "rule",
+      "fill",
+      "text | You <b>restore 1d4 hit points</b> to the object. All pieces must be present. You can repair Magic items, but you must have a caster level equal to or higher than that of the object.",
+      "fill",
+      "section | At higher levels",
+      "text | You can mend heavier objects"
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-0",
+    "count": 1,
+    "title": "Message",
+    "tags": [
+      "spell",
+      "level0"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 0th level transmutation",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V, S, F (copper wire)",
+      "property | Range | medium (100 ft. + 10 ft./level)",
+      "property | Target | one creature/level",
+      "property | Duration | 10 min./level",
+      "property | Saving Throw | none",
+      "property | Spell Resistance | no",
+      "rule",
+      "fill",
+      "text | You can whisper messages and receive whispered replies. Those nearby can hear these messages with a DC 25 Perception check.",
+      "text | The message does not have to travel in a straight line.",
+      "fill",
+      "section | At higher levels",
+      "text | +10 ft., +1 creature, +10 minutes/level"
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-0",
+    "count": 1,
+    "title": "Open/Close",
+    "tags": [
+      "spell",
+      "level0"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 0th level transmutation",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V, S, F (brass key)",
+      "property | Range | close (25 ft. + 5 ft./2 levels)",
+      "property | Target | object weighing up to 30 lbs. or portal that can be opened or closed",
+      "property | Duration | instantaneous",
+      "property | Saving Throw | Will negates (object)",
+      "property | Spell Resistance | yes (object)",
+      "rule",
+      "fill",
+      "text | You can open or close (your choice) a container.",
+      "text | If anything resists this activity the spell fails.",
+      "fill",
+      "section | At higher levels",
+      "text | +5 ft every 2 levels"
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-0",
+    "count": 1,
+    "title": "Prestidigitation",
+    "tags": [
+      "spell",
+      "level0"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 0th level universal",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V, S",
+      "property | Range | 10ft.",
+      "property | Duration | 1 hour",
+      "property | Saving Throw | see text",
+      "property | Spell Resistance | no",
+      "rule",
+      "fill",
+      "text | Once cast, a <I>prestidigitation</I> spell enables you to perform simple magical effects for 1 hour.",
+      "text | It cannot deal damage or affect the concentration of spellcasters.",
+      "text | Any actual change to an object (beyond just moving, cleaning, or soiling it) persists only 1 hour.",
+      "fill"
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-0",
+    "count": 1,
+    "title": "Ray of Frost",
+    "tags": [
+      "spell",
+      "level0"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 0th level evocation",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V, S",
+      "property | Range | close (25 ft. + 5ft./2 levels)",
+      "property | Duration | instantaneous",
+      "property | Saving Throw | none",
+      "property | Spell Resistance | no",
+      "rule",
+      "fill",
+      "text | You shoot a ray of freezing air and ice from your finger. It deals <b>1d3 cold damage</b>.",
+      "fill",
+      "section | At higher levels",
+      "text | +5ft. every 2 levels"
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-0",
+    "count": 1,
+    "title": "Read Magic",
+    "tags": [
+      "spell",
+      "level0"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 0th level divination",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V, S, F (clear crystal/prism)",
+      "property | Range | personal",
+      "property | Target | you",
+      "property | Duration | 10 min/level",
+      "rule",
+      "fill",
+      "text | You can decipher magical inscriptions on objects—books, scrolls, weapons, and the like—that would otherwise be unintelligible. Once the spell is cast and you have read the magical inscription, you can always read it.",
+      "text | You can read at the rate of one page (250 words) per minute. ",
+      "fill",
+      "section | At higher levels",
+      "text | +10 minutes every level"
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-0",
+    "count": 1,
+    "title": "Resistance",
+    "tags": [
+      "spell",
+      "level0"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 0th level abjuration",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V, S, M (a miniature cloak)",
+      "property | Range | touch",
+      "property | Target | creature touched",
+      "property | Duration | 1 minute",
+      "property | Saving Throw | Will negates (harmless)",
+      "property | Spell Resistance | yes (harmless)",
+      "rule",
+      "fill",
+      "text | You imbue the subject with magical energy that protects it from harm, granting it a <b>+1 resistance bonus on saves.</b>",
+      "text | <I>Resistance</I> can be made permanent with a <I>permanency</I> spell.",
+      "fill"
+    ],
+    "color": "black"
+  },
+  {
+    "count": 1,
+    "color": "black",
+    "title": "Scorching Ray",
+    "icon": "white-book-2",
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 2nd level evocation",
+      "rule",
+      "property | Casting time | 1 standard action",
+      "property | Components | V, S",
+      "property | Range | close (25 ft. + 5 ft./2 levels)",
+      "property | Duration | instantaneous",
+      "property | Saving Throw | none",
+      "property | Spell Resistance | yes",
+      "rule",
+      "fill",
+      "text | You shoot (a) beam(s) that deal(s) <b>4d6 fire damage</b>. The beams can be fired at different targets less than 30ft apart, but must be fired at the same time.",
+      "fill",
+      "section | At higher levels",
+      "text | +5ft every 2 levels, +1 ray every four levels after 3rd (max 3 at level 11)."
+    ],
+    "tags": [
+      "spell",
+      "level2"
+    ],
+    "title_size": "16"
+  },
+  {
+    "count": 1,
+    "color": "black",
+    "title": "Shield",
+    "icon": "white-book-1",
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 1st level abjuration",
+      "rule",
+      "property | Casting time | 1 standard action",
+      "property | Components | V, S",
+      "property | Range | personal",
+      "property | Duration | 1 minute/level",
+      "rule",
+      "fill",
+      "text | Create an invisible shield of force that hovers in front of you, negating magic missile attacks. It also provides a <b>+4 shield bonus to AC</b>.",
+      "text | This bonus applies against incorporeal touch attacks, since it is a force effect. The shield has no armor check penalty or arcane spell failure chance.",
+      "fill",
+      "section | At higher levels",
+      "text | +1 minute every level"
+    ],
+    "tags": [
+      "spell",
+      "level1"
+    ],
+    "title_size": "16"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-1",
+    "count": 1,
+    "title": "Sleep",
+    "tags": [
+      "spell",
+      "level1"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 1st level enchantment",
+      "rule",
+      "property | Casting Time | 1 round",
+      "property | Components | V, S, F (fine sand, rose petals, or a live cricket)",
+      "property | Range | medium (100 ft. + 10 ft./level)",
+      "property | Target | living creatures in a 10ft. radius",
+      "property | Duration | 1 min/level",
+      "property | Saving Throw | Will negates",
+      "property | Spell Resistance | yes",
+      "rule",
+      "fill",
+      "text | The target(s) fall into a magical slumber, becoming helpless. Normal noise will not awaken the target(s), but a standard action or taking damage will do so.",
+      "fill",
+      "section | At higher levels",
+      "text | +1 minute and +10ft range every level"
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-1",
+    "count": 1,
+    "title": "Summon Monster I",
+    "tags": [
+      "spell",
+      "level1"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 1st level conjuration",
+      "rule",
+      "property | Casting Time | 1 round",
+      "property | Components | V, S, F (tiny bag & candle)",
+      "property | Range | close (25 ft. + 5 ft./2 levels)",
+      "property | Target | living creatures in a 10ft. radius",
+      "property | Duration | 1 round/level",
+      "property | Saving Throw | none",
+      "property | Spell Resistance | no",
+      "rule",
+      "fill",
+      "text | Summon a creature where you designate. It acts immediately on your turn, attacking your opponents. You can direct it if you can communicate with it.",
+      "text | Choose a creature from the level 1 list.",
+      "fill",
+      "section | At higher levels",
+      "text | +1 round every level, +5ft. every 2 levels"
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "13",
+    "icon": "list.js",
+    "count": 1,
+    "title": "Summon Monster I (List)",
+    "tags": [
+      "spelllist",
+      "level1",
+      ""
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "text | This is the list of monsters that can be summoned at level 1",
+      "rule",
+      "bullet | Dire rat",
+      "bullet | Dog",
+      "bullet | Dolphin",
+      "bullet | Eagle",
+      "bullet | Fire beetle",
+      "bullet | Poisonous frog",
+      "bullet | Pony (horse)",
+      "bullet | Viper (snake)",
+      "rule",
+      "text | These creatures are summoned with the celestial template if you are good, or the fiendish template if you are evil; you may choose either if you are neutral.",
+      ""
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "16",
+    "icon": "white-book-0",
+    "count": 1,
+    "title": "Touch of Fatigue",
+    "tags": [
+      "spell",
+      "level0"
+    ],
+    "icon_back": "robe",
+    "contents": [
+      "subtitle | 0th level necromancy",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V, S, M (a drop of sweat)",
+      "property | Range | touch",
+      "property | Duration | 1 round/level",
+      "property | Saving Throw | Fortitude negates",
+      "property | Spell Resistance | yes",
+      "rule",
+      "fill",
+      "text | You channel negative energy through your touch, fatiguing the target for the spell's duration.",
+      "text | This spell has no effect on a creature that is already fatigued. Unlike with normal fatigue, the effect ends as soon as the spell's duration expires.",
+      "fill",
+      "section | At higher levels",
+      "text | +5ft. every 2 levels"
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "16",
+    "icon": "broadsword",
+    "count": 1,
+    "title": "Greatsword",
+    "tags": [
+      "weapon",
+      "melee"
+    ],
+    "icon_back": "crossed-swords",
+    "contents": [
+      "subtitle | Martial melee weapon (50gp)",
+      "rule",
+      "property | Damage | 2d6 S",
+      "property | Critical | 19-20/x2",
+      "property | Attack Modifier | Strength",
+      "property | Damage Modifier | Strength",
+      "rule",
+      "fill",
+      "description | Attack | Roll 1d20 + STR. If the result is greater than or equal to the target's AC, you hit.",
+      "description | Critical Hits | If you rolled a <b>natural</b> 19-20 on your attack roll, it's a <i>critical threat</i>. Roll again. If you hit, the critical hit is confirmed.",
+      "description | Damage | Roll 2d6 + STR. If you made a critical hit, roll 1 more time and add the results together. The target takes this much damage.",
+      "fill"
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "16",
+    "icon": "bow-arrow",
+    "count": 1,
+    "title": "Longbow",
+    "tags": [
+      "weapon",
+      "ranged"
+    ],
+    "icon_back": "crossed-swords",
+    "contents": [
+      "subtitle | Martial ranged weapon (75gp)",
+      "rule",
+      "property | Damage | 1d8 P",
+      "property | Critical | 20/x3",
+      "property | Attack Modifier | Dexterity",
+      "property | Range | 100ft.",
+      "rule",
+      "fill",
+      "description | Attack | Roll 1d20 + DEX. If the result is greater than or equal to the target's AC, you hit.",
+      "description | Critical Hits | If you rolled a <b>natural</b> 20 on your attack roll, it's a <i>critical threat</i>. Roll again. If you hit, the critical hit is confirmed.",
+      "description | Damage | Roll 1d8. If you made a critical hit, roll 2 more times and add the results together. The target takes this much damage.",
+      "fill"
+    ],
+    "color": "black"
+  },
+  {
+    "title_size": "16",
+    "icon": "arrow-cluster",
+    "count": 1,
+    "title": "Crossbow Bolts (10)",
+    "tags": [
+      "ammunition"
+    ],
+    "icon_back": "quiver",
+    "contents": [
+      "subtitle | Ammunition (10pcs) (1gp)",
+      "rule",
+      "property | Usage | heavy crossbows, light crossbows, hand crossbows",
+      "rule",
+      "fill",
+      "description | Heavy Crossbows | Crossbow bolts are the standard ammunition for heavy crossbows.",
+      "description | Light Crossbows | Crossbow bolts are the standard ammunition for light crossbows.",
+      "description | Hand Crossbows | Crossbow bolts are the standard ammunition for hand crossbows.",
+      "fill",
+      "rule",
+      "boxes | 10 | 1.66"
+    ],
+    "color": "black"
+  }
+]
