@@ -54,6 +54,8 @@ func createSpell() {
     let sr = readLine()!
     print("Description? (some HTML [<b>, <i>] is allowed)")
     let desc = readLine()!
+    print("Description line 2? (ignored if empty)")
+    let desc2 = readLine()!
     print("Does the spell get better at higher levels?")
     var improves = (does: readLine()!.equalsIgnoreCase("y", "yes", "true"), how: "")
     if improves.does {
@@ -80,6 +82,9 @@ func createSpell() {
     content.append("rule")
     content.append("fill")
     content.append("text | \(desc)")
+    if !desc2.isEmpty {
+        content.append("text | \(desc2)")
+    }
     content.append("fill")
     if improves.does {
         content.append("section | At higher levels")
