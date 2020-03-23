@@ -85,7 +85,7 @@ func createSpell() {
         content.append("section | At higher levels")
         content.append("text | \(improves.how)")
     }
-    addCard(title: title, contents: content, tags: ["spell"], icon_back: "robe", icon: "white-book-\(level)", titleSize: "16")
+    addCard(title: title, contents: content, tags: ["spell", "level\(level)"], icon_back: "robe", icon: "white-book-\(level)", titleSize: "16")
     print("Spell added to JSON")
 }
 func createWeapon() {
