@@ -413,10 +413,10 @@ if CommandLine.argc > 1, CommandLine.arguments[1] == "RPGSTDLIB" {
     exit(0)
 }
 
-while(true) {
+main: while(true) {
     let input: String = readLine()!
     guard !input.isEmpty else {
-        continue
+        continue main
     }
     
     if input.equalsIgnoreCase("q", "quit", "exit") {
@@ -424,7 +424,7 @@ while(true) {
         if readLine()!.equalsIgnoreCase("y", "yes") {
             save()
         }
-        break //breaks `while(true)` loop
+        break main//breaks `while(true)` loop
     } else if input.equalsIgnoreCase("c", "create", "create card", "create new", "create new card") {
         print("Type? (spell, weapon, enemy/villain, armor, equipment, potion)")
         let type = readLine()!
@@ -444,7 +444,7 @@ while(true) {
             createAmmunition()
         } else {
             print("Not recognized, not creating")
-            continue
+            continue main
         }
     } else if input.equalsIgnoreCase("a", "add", "add card", "add new", "add new card") {
         var cards: [[String: Any]] = []
@@ -483,14 +483,14 @@ while(true) {
             if card["title"]! as! String == cardInput {
                 jsonObject.append(card)
                 print("Added '\(card["title"]! as! String)'")
-                continue
+                continue main
             }
         }
         for card in cards {
             if (card["title"]! as! String).equalsIgnoreCase(cardInput) {
                 jsonObject.append(card)
                 print("Added '\(card["title"]! as! String)'")
-                continue
+                continue main
             }
         }
         print()
@@ -552,7 +552,7 @@ while(true) {
                 print()
                 print("Type 'n' or 'no' to cancel")
                 if readLine()!.equalsIgnoreCase("n", "no") {
-                    continue
+                    continue main
                 }
                 print("Filename? (with .json)")
                 let name = readLine()!
