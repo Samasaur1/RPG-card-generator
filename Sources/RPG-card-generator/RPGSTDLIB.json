@@ -1118,5 +1118,118 @@
       "boxes | 10 | 1.66"
     ],
     "color": "black"
+  },
+  {
+    "color" : "black",
+    "tags" : [
+      "spell"
+    ],
+    "title" : "Bull's Strength",
+    "icon_back" : "robe",
+    "title_size" : "16",
+    "count" : 1,
+    "icon" : "white-book-2",
+    "contents" : [
+      "subtitle | 2nd level transmutation",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V,S,M\/DF (DNA from bull)",
+      "property | Range | touch",
+      "property | Duration | 1 min\/level",
+      "property | Saving Throw | Will negates (harmless)",
+      "property | Spell Resistance | yes (harmless)",
+      "rule",
+      "fill",
+      "text | The subject gains a <b>+4 enhancement bonus to Strength<\/b>.",
+      "text | This effectively gives a +2 bonus to STR, which applies to all uses of this modifier",
+      "fill",
+      "section | At higher levels",
+      "text | +1 minute every level"
+    ]
+  },
+  {
+    "icon_back" : "robe",
+    "icon" : "white-book-1",
+    "tags" : [
+      "spell"
+    ],
+    "title_size" : "16",
+    "color" : "black",
+    "count" : 1,
+    "title" : "Enlarge Person",
+    "contents" : [
+      "subtitle | 1st level transmutation",
+      "rule",
+      "property | Casting Time | 1 round",
+      "property | Components | V,S,M (powdered iron)",
+      "property | Range | close (25 ft. + 5ft.\/2 levels)",
+      "property | Duration | 1 min\/level",
+      "property | Saving Throw | Fortitude negates",
+      "property | Spell Resistance | yes",
+      "rule",
+      "fill",
+      "text | The target <b>doubles in size<\/b> (8x volume), increasing by 1 size category.",
+      "text | The target gets +2 to Strength, -2 to Dexterity, -1 on attack rolls and AC",
+      "fill",
+      "section | At higher levels",
+      "text | +5ft. every 2 levels, +1 minute per level"
+    ]
+  },
+  {
+    "contents" : [
+      "subtitle | 1st level transmutation",
+      "rule",
+      "property | Casting Time | 1 round",
+      "property | Components | V,S,M (powdered iron)",
+      "property | Range | close (25 ft. + 5ft.\/2 levels)",
+      "property | Duration | 1 min\/level",
+      "property | Saving Throw | Fortitude negates",
+      "property | Spell Resistance | yes",
+      "rule",
+      "fill",
+      "text | The target <b>halves in size<\/b> (1\/8x volume), decreasing by one size category",
+      "text | The target gets +2 to Dexterity, -2 to Strength, and +1 to attack rolls and AC",
+      "fill",
+      "section | At higher levels",
+      "text | +5ft. every 2 levels, +1 minute per level"
+    ],
+    "color" : "black",
+    "count" : 1,
+    "title_size" : "16",
+    "icon_back" : "robe",
+    "icon" : "white-book-1",
+    "tags" : [
+      "spell"
+    ],
+    "title" : "Reduce Person"
+  },
+  {
+    "color" : "black",
+    "count" : 1,
+    "icon" : "white-book-1",
+    "title" : "Shocking Grasp",
+    "tags" : [
+      "spell",
+      "level2"
+    ],
+    "icon_back" : "robe",
+    "contents" : [
+      "subtitle | 1st level evocation",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V,S",
+      "property | Range | touch",
+      "property | Duration | instantaneous",
+      "property | Saving Throw | none",
+      "property | Spell Resistance | yes",
+      "rule",
+      "fill",
+      "text | Deal <b>1d6 electricity damage per caster level<\/b> (max 5d6).",
+      "text | You gain a +3 bonus on arrack rolls if the target is using metal armor or shields, using metal weaponry, or is made of metal.",
+      "fill",
+      "section | At higher levels",
+      "text | +1d6 damage per level (max 5d6)"
+    ],
+    "title_size" : "16"
   }
 ]
