@@ -1231,5 +1231,119 @@
       "text | +1d6 damage per level (max 5d6)"
     ],
     "title_size" : "16"
+  },
+  {
+    "title" : "Acid Arrow",
+    "icon" : "white-book-2",
+    "tags" : [
+      "spell",
+      "level2"
+    ],
+    "title_size" : "16",
+    "contents" : [
+      "subtitle | 2nd level conjuration",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V,S,M,F (a dart)",
+      "property | Range | long (400 ft. + 40ft\/level)",
+      "property | Duration | 1 round + 1 round per 3 levels",
+      "property | Saving Throw | none",
+      "property | Spell Resistance | no",
+      "rule",
+      "fill",
+      "text | You shoot an arrow that deals <b>2d4 acid damage<\/b>.",
+      "text | The acid lasts 1 round, plus another round for every three levels (maximum 6 additional rounds)",
+      "fill",
+      "section | At higher levels",
+      "text | +1 round every 3 levels (max 6)"
+    ],
+    "color" : "black",
+    "icon_back" : "robe",
+    "count" : 1
+  },
+  {
+    "count" : 1,
+    "title" : "Acid Fog",
+    "title_size" : "16",
+    "icon_back" : "robe",
+    "tags" : [
+      "spell",
+      "level6"
+    ],
+    "contents" : [
+      "subtitle | 6th level conjuration",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V,S,M (powdered peas and an animal hoof)",
+      "property | Range | medium (100 ft. + 10 ft\/level)",
+      "property | Duration | 1 round\/level",
+      "property | Saving Throw | none",
+      "property | Spell Resistance | no",
+      "rule",
+      "fill",
+      "text | You create an acid fog that deals <b>2d6 acid damage<\/b> to each creature and object in the fog, every round.",
+      "text | The fog spreads in a 20-ft. radius, 20 ft. high. It slows creatures and obscures sight.",
+      "fill",
+      "section | At higher levels",
+      "text | +10 ft\/level"
+    ],
+    "icon" : "white-book-6",
+    "color" : "black"
+  },
+  {
+    "title" : "Alter Self",
+    "title_size" : "16",
+    "tags" : [
+      "spell",
+      "level2"
+    ],
+    "color" : "black",
+    "count" : 1,
+    "icon_back" : "robe",
+    "icon" : "white-book-2",
+    "contents" : [
+      "subtitle | 2nd level transmutation",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V,S,M (a piece of what you want to be)",
+      "property | Range | personal",
+      "property | Duration | 1 min.\/level",
+      "rule",
+      "fill",
+      "text | You assume the form of any Small or Medium humanoid creature. If small, you gain a <b>+2 to Dexterity<\/b>. If medium, you gain a <b>+2 bonus to Strength<\/b>.",
+      "text | You can gain the following abilities: darkvision 60 feet, low-light vision, scent, swim 30 feet",
+      "fill",
+      "section | At higher levels",
+      "text | +1 minute every level"
+    ]
+  },
+  {
+    "title" : "Analyze Dweomer",
+    "tags" : [
+      "spell",
+      "level6"
+    ],
+    "color" : "black",
+    "icon_back" : "robe",
+    "icon" : "white-book-6",
+    "contents" : [
+      "subtitle | 6th level divination",
+      "rule",
+      "property | Casting Time | 1 standard action",
+      "property | Components | V,S,F (a ruby and gold lens worth 1,500gp)",
+      "property | Range | close (25 ft. + 5ft\/2 levels)",
+      "property | Duration | 1 round\/level",
+      "property | Saving Throw | none or Will negates",
+      "property | Spell Resistance | no",
+      "rule",
+      "fill",
+      "text | Examine a creature/object each round as a free action. Learn magic items' functions, use, and charges; creatures' spells, their effects, and caster levels.",
+      "text | Attended objects can make will saves, making them immune to <i>analyze dweomer</i> for 24 hours.",
+      "fill",
+      "section | At higher levels",
+      "text | +1 round (and therefore target)\/level"
+    ],
+    "title_size" : "16",
+    "count" : 1
   }
 ]
